@@ -18,8 +18,8 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Handlebars
-app.engine('handlebars', engine({defaultLayout: 'main', extname: '.hbs'}));
-app.set('view engine', 'handlebars');
+app.engine('hbs', engine({defaultLayout: 'main', extname: '.hbs'}));
+app.set('view engine', 'hbs');
 // app.set('views', './views')
 
 // Routes
